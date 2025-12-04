@@ -26,6 +26,7 @@ main() {
         touch "${path}/input.txt"
         cat << EOF  > "${path}/run_it.rb"
 def load_input
+  # File.readlines('input.txt').map(&:strip)
   File.readlines('input_test.txt').map(&:strip)
 end
 
